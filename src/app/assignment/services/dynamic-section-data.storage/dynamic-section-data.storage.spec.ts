@@ -13,7 +13,7 @@ export class DynamicSectionDataStorage {
   }
 
   // บันทึกข้อมูลแบบ Async [cite: 265-267]
-  async (data: DynamicSection): Promise<void> {
+  async saveData(data: DynamicSection): Promise<void> {
     localStorage.setItem(this.keyName, JSON.stringify(data));
   }
 }
