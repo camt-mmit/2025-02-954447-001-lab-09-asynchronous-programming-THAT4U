@@ -13,7 +13,7 @@ export class DynamicSectionDataStorage {
     return data ? JSON.parse(data) : null;
   }
 
-  async saveData(data: DynamicSection): Promise<void> {
+  async set(data: DynamicSection): Promise<void> {
     sessionStorage.setItem(this.keyName, JSON.stringify(data));
   }
 }
